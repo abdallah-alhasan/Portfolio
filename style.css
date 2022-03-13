@@ -140,7 +140,7 @@ img {
   margin-left: -10px;
   height: 854px;
   width: 324px;
-  background: url(../../images/pp4.png) top var(--main);
+  background: url(images/pp4.png) top var(--main);
 }
                                       /* second section end */
                                       /* third section start  */
@@ -213,7 +213,7 @@ img {
                                         /* third section end  */
                                         /* forth section start  */
 .forth-section{
-  background: url(../../images/cover.jpg) no-repeat bottom;
+  background: url(images/cover.jpg) no-repeat bottom;
   filter: grayscale(500%);
   min-height: 600px;
   clip-path: polygon(50% 85%, 100% 68%, 100% 0, 0 0, 0% 100%);
@@ -310,7 +310,7 @@ img {
   display: grid;
   padding: 10px;
   grid-template-columns: auto;
-  background: url(../../images/a04fb45f-ce72-45f1-b492-ea6eeef28a6e.jpg);
+  background: url(images/a04fb45f-ce72-45f1-b492-ea6eeef28a6e.jpg);
   transform: rotateY(180deg);
   align-items: center;
   align-content: space-evenly; 
