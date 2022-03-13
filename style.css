@@ -283,8 +283,8 @@ img {
   grid-template-columns: auto auto auto;
   padding-bottom: 20px;
   column-gap: 20px;
-  margin: 45px;
-}
+  margin: 45px 45px 0 45px;
+  }
 .flip-card {
   background-color: transparent;
   height: 400px;
@@ -343,7 +343,7 @@ img {
                                             /* sixth section end  */
                                             /* footer starts */
 footer{
-  height: 150px;
+  height: 100px;
   background-color: black;
   color: white;
   font-size: 70%;
