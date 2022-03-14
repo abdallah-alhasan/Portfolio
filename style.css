@@ -12,7 +12,6 @@ body {
 .seperate{
   height: 100px;
 }
-
                                       /* Start Navbar */
 .navbar {
   background:black;
@@ -41,11 +40,19 @@ body {
                                         /* End Navbar */
                                         /* first section start  */
 .first-section{
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: auto auto;
   align-items: center;
   background: black;
   clip-path:  polygon(72% 88%, 100% 100%, 100% 0, 0 0, 0 100%);
+}
+.picture .img{
+  max-width: 100%;
+  margin-top: -86px;
+  margin-left: -10px;
+  height: 854px;
+  width: 472px;
+  background: url(images/pp4.png) top #000000;
 }
 .card-one {
   background-color: transparent;
@@ -95,6 +102,7 @@ span{
   border-color: var(--main);
   padding: 5px;
   margin-top: 10px;
+  margin-bottom: 100px;
 }
                                         /* first section end */
                                         /* second section start  */
@@ -136,14 +144,6 @@ img {
   padding: 10px;
   font-size: 90%;
 }
-.picture .img{
-  max-width: 118%;
-  margin-top: -86px;
-  margin-left: -10px;
-  height: 854px;
-  width: 324px;
-  background: url(images/pp4.png) top var(--main);
-}
                                       /* second section end */
                                       /* third section start  */
 .card-three{
@@ -162,24 +162,25 @@ img {
 }
 .edu-cards{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
   justify-items: center;
   justify-content: center;
-  column-gap: 20px;
+  gap: 80px;
+}
+#l{
+  display: grid;
+  grid-template-columns: auto;
 }
 .c{
   display: grid;
   background-color: #88d9dc;
   width: 300px;
-  height: 500px;
+  gap: 40px;
+  min-height: 600px;
   padding: 20px;
   margin: 10px 0;
   border-radius: 30px;
-  align-items: center;
-  justify-items: center;
-}
-.c .range{
-  width: 200px;
+  box-shadow: 9px 5px black;
 }
 .c .rangeValue {
   color: black;
@@ -187,6 +188,8 @@ img {
 .c button{
   background-color: var(--main);
   padding: 10px;
+  max-width: 177px;
+  height: 60px;
   text-decoration: none;
   border-radius: 10% /50%;
   color: white;
@@ -196,12 +199,15 @@ img {
 }
 .c a{
   background-color: var(--main);
-  padding: 10px;
   text-decoration: none;
   color: white;
 }
 .c .range{
   background: white;
+}
+.c #rangediv{
+  display: grid;
+  justify-items: center;
 }
 .c .range::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -213,8 +219,15 @@ img {
   box-shadow: -407px 0 0 400px black;
 }
 .c:hover{
-  box-shadow: 9px 5px black;
+  transform: scale(1.02,1.02);
 } 
+.uni,.moreInfo{
+  display: grid;
+}
+.one,.two{
+  display: grid;
+  align-content: space-between;
+}
                                         /* third section end  */
                                         /* forth section start  */
 .forth-section{
@@ -240,18 +253,34 @@ img {
 }
                                         /* forth section end  */
                                         /* fifth section start  */
-.fifth-section{
+.tech{
   display: grid;
-  grid-template-columns: auto;
-  gap: 40px;
-  min-height: 600px;
-  justify-items: center;
-  align-items: center;
-  padding-bottom: 40px;
+    grid-template-columns: auto;
+    gap: 40px;
+    min-height: 600px;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 40px;
+    justify-content: start;
+    margin-left: 50px;
+}
+.soft{
+  display: grid;
+    grid-template-columns: auto;
+    gap: 40px;
+    min-height: 600px;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 40px;
+    justify-content: end;
+    margin-right: 50px;
+
 }
 .rangeValue {
   color: #999;
   font-weight: 400;
+  text-align: center;
+  margin-top: 50px;
 }
 .range {
   width: 600px;
@@ -269,7 +298,7 @@ img {
   height: 15px;
   border-radius: 50%;
   background: var(--main);
-  border: 4px solid #333;
+  /* border: 4px solid #333; */
   box-shadow: -407px 0 0 400px var(--main);
 }
                                             /* fifth section end  */
@@ -323,6 +352,11 @@ img {
 }
 .flip-card-back a{
   text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.flip-card-back a:hover{
   color: white;
 }
 .title{
@@ -343,15 +377,40 @@ img {
                                             /* sixth section end  */
                                             /* footer starts */
 footer{
-  height: 100px;
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 200px;
   background-color: black;
   color: white;
-  font-size: 70%;
+  font-size: 100%;
+}
+.first-part{
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
   align-items: center;
   justify-items: center;
+  column-gap: 20px;
+
+}
+.second-part{
+  display: grid;
+  grid-template-columns: auto;
+}
+.footerLinks{
+  color: white;
+  text-decoration: none;
+}
+.footerLinks:hover{
+  color: var(--main);
+}
+.footerUl{
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin: 0;
 }
 .icons a, .icons {
   color: white;
@@ -365,7 +424,8 @@ footer{
 @media screen and (max-width: 767px) {
   .information,
   .me,
-  .edu-cards, 
+  .edu-cards,
+  .first-section, 
   .forth-section,
   .fifth-section,
   .sixth-section,
@@ -374,6 +434,9 @@ footer{
     text-align: center;
     font-size: 100%;
   }
+  .c{
+    grid-template-columns: auto auto;
+  } 
 }
 @media screen and (min-width: 768px) and (max-width: 1023px)  {
   .information,
@@ -383,10 +446,14 @@ footer{
   .forth-section,
   .sixth-section,
   .flip-cards{
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     text-align: center;
     font-size: 100%;
   }
+  .c{
+    width: 700px; 
+    grid-template-columns: auto auto;
+  } 
 }
 @media screen  and (max-width: 424px)  {
   .card-two{
@@ -398,7 +465,16 @@ footer{
     width: 250px;
 
   }
-  
+  .c .range{
+    width: 200px;
+  }
+  .c{
+    grid-template-columns: auto auto;
+  } 
+  footer{
+    font-size: 50%;
+
+  }
 }
 @media screen and (min-width: 425px) and (max-width: 767px)  {
   .card-two{
@@ -410,12 +486,8 @@ footer{
     width: 350px;
 
   }
-}
-@media screen and (min-width: 1300px) and (max-width: 1920px)  {
-  .edu-cards{
-    grid-template-columns: auto auto auto auto;
-    text-align: center;
-    font-size: 100%;
+  .c .range{
+    width: 200px;
   }
 }
 @media screen  and (min-width:370px) and (max-width:378px)   { 
@@ -423,4 +495,21 @@ footer{
     width: 385px; 
   } 
 }
-
+@media screen  and (min-width:1300px) { 
+  .c{
+    width: 1200px; 
+    grid-template-columns: auto auto;
+  } 
+}
+@media screen  and (min-width:1000px) { 
+  .c{
+    width: 850px; 
+    grid-template-columns: auto auto;
+  } 
+}
+@media screen and (min-width: 1440px){
+.c {
+    width: 1350px;
+    grid-template-columns: auto auto;
+}
+}
