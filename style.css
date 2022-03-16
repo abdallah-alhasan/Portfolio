@@ -170,13 +170,13 @@ img {
 #l{
   display: grid;
   grid-template-columns: auto;
+  justify-items: center;
 }
 .c{
   display: grid;
   background-color: #88d9dc;
   width: 300px;
   gap: 40px;
-  min-height: 600px;
   padding: 20px;
   margin: 10px 0;
   border-radius: 30px;
@@ -207,6 +207,7 @@ img {
 .c #rangediv{
   display: grid;
   justify-items: center;
+  margin-bottom: 40px;
 }
 .c .range::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -222,12 +223,17 @@ img {
   box-shadow: 9px 5px black;
 
 } 
-.uni,.moreInfo{
+.uni,
+.moreInfo{
   display: grid;
+  justify-items: center;
 }
-.one,.two{
+.one,
+.two{
   display: grid;
+  gap: 20px;
   align-content: space-between;
+  justify-items: center;
 }
                                         /* third section end  */
                                         /* forth section start  */
