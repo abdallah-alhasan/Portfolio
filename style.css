@@ -412,7 +412,6 @@ img {
 .flip-card-back {
   display: grid;
   padding: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   background: var(--main);
   transform: rotateY(180deg);
   align-items: center;
